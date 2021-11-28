@@ -1,0 +1,28 @@
+body {
+    background:seashell ;   /*背景色指定*/
+}
+#btn {
+    width:200px; /*幅*/
+    height: 200px;  /*高さ*/
+    background:#ef454a ; /*背景色*/
+    border-radius:50% ; /*要素境界の外各を丸める. radius=半径. */
+    margin: 30px auto; /*要素の外側余白.上下は30px余白.左右はautoで中央に配置*/
+    text-align:center; /*ブロック要素の水平移動*/
+    line-height:200px ; /*行間調節(上下が調節される) pxなしでは値(文字数分)調整*/
+    color: #fff; /*文字色*/
+    font-weight: bold; /*フォントの太さ. nomal=400 bold=700*/
+    font-size: 42px; /*フォントの大きさ. */
+    cursor: pointer;
+    box-shadow:0 10px 0 #d1483e ;  /*要素の影設定(x方向,y方向,ぼかし) */
+    user-select: none; /*テキストの選択(薄青)を削除*/
+}
+
+#btn:hover {     /*カーソルが要素に乗っている際にスタイルを適応*/
+  opacity:0.9;   /*opacity(不透明度)は0.9*/
+}
+
+#btn:active {    /*カーソルクリック時のスタイルを指定*/
+    box-shadow:0 5px 0 #d1483e ;
+     /*btnCSSのnboxshodowより値を低くすることでボタン凹み演出*/
+    margin-top: 35px; /*btnの30pxより高い値(35px)で凹みを演出*/
+}
